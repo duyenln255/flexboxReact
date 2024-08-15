@@ -1,0 +1,126 @@
+
+/* Dùng margin thay cho gap */  /* Thêm khoảng cách 10px ở tất cả các cạnh */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.productContainer {
+  flex: 1 1 21%;
+  max-width: 250px;
+  margin: 10px; 
+}
+
+@media (max-width: 1200px) {
+  .productContainer {
+    flex: 1 1 45%;
+    margin: 10px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .productContainer {
+    flex: 1 1 90%;
+    margin: 10px; 
+  }
+}
+/* Dùng gap */
+/* 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  .productContainer {
+    flex: 1 1 21%; /* Chiếm 21% chiều rộng khung chứa *//* 
+    max-width: 250px;
+  }
+  
+  @media (max-width: 1200px) {
+    .productContainer {
+      flex: 1 1 45%; /* Two cards per row on medium screens *//* 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productContainer {
+      flex: 1 1 90%; /* One card per row on small screens *//* 
+    }
+  } */
+
+ /* Sử dụng padding với box-sizing */ /* Bao gồm padding và border trong kích thước tổng */
+/*  
+ .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+  
+  .productContainer {
+    flex: 1 1 21%;
+    max-width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 1200px) {
+    .productContainer {
+      flex: 1 1 45%;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productContainer {
+      flex: 1 1 90%;
+      padding: 10px;
+    }
+  } 
+  */
+
+  /* Sử dụng flex với space-between và space-around Sử dụng thuộc tính justify-content của flexbox để tạo khoảng cách giữa các phần tử. Tuy nhiên, phương pháp này sẽ phân chia khoảng cách đồng đều giữa các phần tử và không thích hợp để tạo khoảng cách cụ thể giữa từng phần tử.
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .productContainer {
+    flex: 1 1 21%;
+    max-width: 250px;
+  }
+  
+  @media (max-width: 1200px) {
+    .container {
+      justify-content: space-around; 
+    }
+    .productContainer {
+      flex: 1 1 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      justify-content: space-around; 
+    }
+    .productContainer {
+      flex: 1 1 90%;
+    }
+  }
+   */

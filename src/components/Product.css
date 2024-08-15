@@ -1,0 +1,78 @@
+.card {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    /* width: 250px; */
+    height: 450px; /* Total card height */
+    border: 1px solid #ddd; /* Đặt viền mỏng màu xám nhạt */
+    border-radius: 10px;    /* Bo tròn 10px*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   /* Đổ bóng nhẹ cho thẻ */
+    overflow: hidden;   /* Ẩn phần tử vượt quá khung */
+  }
+  
+  .image {
+    flex: 1 1 50%;  /* Chiếm 50% chiều cao Card */
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 1/1;  /* Đặt tỷ lệ khung hình là 1:1 */
+  }
+  
+  .content {
+    flex: 1 1 50%;
+    padding: 10px;  /* padding-vùng đệm 10px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Chia đều không gian giữa các phần tử */
+  }
+  
+  .badges {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;    /* Padding dưới cùng 10px*/
+  }
+  
+  .badgeTopDeal {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;   /* define padding trong nhãn TOP DEAL */
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  
+  .badgeAuth {
+    background-color: rgb(11, 116, 229);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+  
+  .description {
+    margin-bottom: 10px;
+    text-align: left; /* Căn trái văn bản */
+    overflow: hidden; /* Ẩn phần vượt quá khung */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Số dòng tối đa https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp*/ 
+    -webkit-box-orient: vertical; /* The box lays out its contents vertically. https://developer.mozilla.org/en-US/docs/Web/CSS/box-orient */
+  }
+  
+  .price {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .discount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .oldPrice {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .deliveryInfo {
+    margin-bottom: 10px;
+  }
+  
